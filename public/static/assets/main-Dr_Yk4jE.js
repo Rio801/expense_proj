@@ -1,0 +1,1 @@
+console.log("Hello from Vite + Go! (main.js)");document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("app");if(e){const n=document.createElement("h2");n.textContent="Content added by main.js",e.appendChild(n)}else console.error("#app element not found!")});

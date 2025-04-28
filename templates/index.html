@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+
+    <!--
+    IMPORTANT: Call the helper with the key Vite uses in the manifest.
+    For an entry point at './src/main.js', the key is usually 'src/main.js'.
+    -->
+    {{ viteAssets "src/main.js" }}
+  </head>
+  <body>
+    <h1>{{ .Title }}</h1>
+    <p>This content is rendered by the Go template.</p>
+
+    <!-- This div will be targeted by main.js -->
+    <div id="app">
+      <p><i>Initial content inside #app div.</i></p>
+    </div>
+  </body>
+</html>
